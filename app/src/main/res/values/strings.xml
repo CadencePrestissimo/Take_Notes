@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Take_Notes</string>
+    <string name="to_do_list">Notes - List </string>
+    <string name="h">.</string>
+    <string name="change_or_add_notes">Change or add notes !</string>
+    <string name="add">Hey Bro !</string>
+    <string name="add_note1">Add Note</string>
+    <string name="todo">TODO</string>
+    <string name="change_add">Change Add</string>
+</resources>

@@ -16,7 +16,7 @@ import java.util.HashSet;
 
 public class MainActivity2 extends AppCompatActivity {
     int noteId;
-    EditText editText;
+
 
 
     @Override
@@ -26,7 +26,7 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         Intent intent=getIntent();
         noteId = intent.getIntExtra("noteId",-1);
-        editText =(EditText) findViewById(R.id.PersonName);
+         EditText  editText=(EditText) findViewById(R.id.PersonName);
 
         if(noteId!=-1)
         {editText.setText(MainActivity.notes.get(noteId));}
@@ -48,7 +48,7 @@ public class MainActivity2 extends AppCompatActivity {
                 MainActivity.arrayAdapter.notifyDataSetChanged();
                 SharedPreferences sharedPreferences=getApplicationContext().getSharedPreferences("com.example.take_notes", Context.MODE_PRIVATE);
                 HashSet<String>set=new HashSet<>(MainActivity.notes);
-                sharedPreferences.edit().putStringSet("note",set).apply();
+                sharedPreferences.edit().putStringSet("notes",set).apply();
             }
 
             @Override
